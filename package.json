@@ -1,0 +1,40 @@
+{
+  "name": "pascal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx tsc",
+    "build-swc": "npx swc src -d dist",
+    "start": "node -r tsconfig-paths/register -r dotenv/config dist/main.js",
+    "dev": "tsx --experimental-wasm-modules -r dotenv/config src/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lionkeng/jokester.git"
+  },
+  "keywords": [
+    "example",
+    "langchainJS",
+    "openAI",
+    "typescript"
+  ],
+  "author": "",
+  "license": "LGPL-3.0-or-later",
+  "dependencies": {
+    "langchain": "^0.0.178"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.95",
+    "@swc/helpers": "^0.5.3",
+    "regenerator-runtime": "^0.14.0",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^20.8.10",
+    "dotenv": "^16.3.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^3.14.0",
+    "typescript": "^5.2.2"
+  }
+}
